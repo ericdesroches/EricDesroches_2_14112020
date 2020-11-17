@@ -1,4 +1,4 @@
-<!DOCTYPE html />
+<!DOCTYPE html>
 
 <html lang="fr">
 	<head>
@@ -7,14 +7,9 @@
 		<link rel="stylesheet" href="styles/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
 	</head>
-
 	<body>
 		<div id="bloc_page">
-		
-
-	   <!-- ___________________________________________Header____________________________________________________ -->
-
-	   <header>
+		<header>
 			<div id="logo"><img src="images/logo/Reservia@3x.png" alt="logo Reservia" /></div>
 			
 			<div id="nav">
@@ -27,10 +22,6 @@
 	            </nav>  
         	</div>
 		</header>
-
-
-	   <!-- _________________________Section 1 recherche___________________________________ -->
-
  		<div id="conteneur_section1">
  			<div id="baseline1"><h2>Trouvez votre hébergement pour des vacances de rêve</h2></div>
 			<div id="baseline2"><p>En plein centre ville ou en pleine nature</p></div>
@@ -45,9 +36,10 @@
                     <form method="post" action="traitement.php">
                     <p><input type="text" name="pseudo" /></p>
                     </form>
+
                 </div>
                 <div id="rechercher">
-                    <p id="rechercher">rechercher</p>
+                	<p>Rechercher</p>
                 </div>
             </div>
 
@@ -84,17 +76,14 @@
         </div>        
         
 
-		
-
-<!-- ________________________________________Section 2 Hébergements___________________________________________ -->	   
-
 		<section id="conteneur_section2">
 			<div id="bloc_gauche">
 				<div id="titre_bloc_gauche_haut"><h2 id="hebergements">Hébergements à Marseille</h2></div>
 					<div id="bloc_produits_hebergement">
 						
-						<a href="#" target="">
+						
 							<div class="produit_hebergement">
+								<a href="#">
 								<div class="photo_produit_hebergement">
 									<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="appt" />
 								</div>
@@ -108,11 +97,12 @@
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #D9D9D9" ></i></p>
 								</div>
+								</a>
 							</div>
-						</a>
+						
 
-						<a href="#" target="">
-						<div class="produit_hebergement">
+						
+						<div class="produit_hebergement"><a href="#">
 							<div class="photo_produit_hebergement">
 								<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="appt" />
 							</div>
@@ -125,8 +115,8 @@
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #0065FC" ></i></p>
 								
-							</div>
-						</div></a>
+							</div></a>
+						</div>
 
 						<div class="produit_hebergement">
 							<div class="photo_produit_hebergement">
@@ -202,9 +192,7 @@
 					<div id="bloc_produits_populaires">
 						<a href="#">
 							<div class="produit_populaire">
-								<div class="photo_produit_populaire">
-									<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="appt" />
-								</div>
+								<div class="photo_produit_populaire"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="appt" /></div>
 								<div class="texte_hebergement">
 								<h4>Hôtel Le soleil du matin</h4>
 								<p class="texte">Nuit à partir de <strong>128€</strong></p>
@@ -214,16 +202,16 @@
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #0065FC" ></i></p>
-							</div>	
-						
-						</div></a>
+								</div>	
+							</div>
+						</a>
 
 						<div class="produit_populaire">
 							<div class="photo_produit_populaire">
 								<img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="appt" />
 							</div>
 							<div class="texte_hebergement">
-								<h4>Au coeur de l'eau </br>Chambres d'hôtes</h4>
+								<h4>Au coeur de l'eau <br />Chambres d'hôtes</h4>
 								<p class="texte">Nuit à partir de <strong>25€</strong> </p>
 								<p>	
 									<i class="fas fa-star " style="color: #0065FC" ></i>
@@ -246,7 +234,8 @@
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #0065FC" ></i>
-									<i class="fas fa-star " style="color: #D9D9D9" ></i></p>
+									<i class="fas fa-star " style="color: #D9D9D9" ></i>
+								</p>
 							</div>
 						</div>
 
@@ -254,10 +243,7 @@
 			</div>
 		</section>
 
-
-	   <!-- Section 3 (Activités -->
-
-		<!--<section id="section3">-->
+		<section id="section3">
 			<div id="conteneur_section3">
 				
 				<div class="titre_bloc"><h2 id="activites">Activités à Marseille</h2></div>
@@ -332,10 +318,6 @@
 		        </div>
 			</div>	
 		</section>
-
-
-	   <!-- ______________________________________________Footer_____________________________________________________ -->
-
 		<footer>
 			<div id="conteneur_section4">
 				<div id="conteneur_texte">
@@ -361,10 +343,6 @@
 
 			</div>
 		</footer>
-
-
-	</div> <!-- dim. largeur page -->
-	</div>
-</body>
-
+		</div> <!--fin BLOC PAGE-->
+	</body>
 </html>

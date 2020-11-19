@@ -166,21 +166,19 @@ body
 	margin: 0 auto;
 }
 /* ____________________________________________________Header bloc_logo______________________________________ */
-
 header
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: auto;
+	align-items: center;
+	flex-wrap: wrap;
     margin: 0 50px 0 50px;
 }
 
 #logo
 {
-    display: flex;
-   	align-items: baseline;
-   	justify-content: space-between;
+	display: flex;
 }
 
 #logo img
@@ -189,27 +187,24 @@ header
 	height: 60px;
 }
 
+/* ____________________________________________ Navigation__________________________________________ */
 
-
-/* ____________________________________________Header Navigation__________________________________________ */
-
-
-#nav{
+#menu{
 	display: flex;
-	font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+	flex-direction: row;
+	/*list-style-type: none;*/
+	font-weight: bold;
+	
 }
 
 nav ul
 {
-    /*list-style-type: none;*/
-    display: flex;
-    font-weight: bold;
+	display: flex;
 }
 
 nav li
 {
-    margin-right: 40px;
+	margin-right: 40px;
     display: flex;
     flex-direction: row;
     align-content: space-between; 
@@ -226,9 +221,23 @@ nav a:hover
 {
 	display: flex;
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+	border-top: 2px solid #0065FC;
+	padding-top: 18px;
 }
 
+/* ____________________________________________ inscription __________________________________________ */
+
+
+#inscription {
+	font-weight: 700;
+	
+	order: 2;
+	padding-top: 18px;
+	padding-right: 40px;
+}
+#inscription a{
+	color: #0065FC;
+}
 
 /* _________________________________ Section 1 _________________________________ */
 

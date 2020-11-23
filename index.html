@@ -6,14 +6,14 @@
 		<title>Reservia</title>
 		<link rel="stylesheet" href="styles/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-		<meta name="viewport" content="width=320" />
+		<meta name="viewport" content="width=device-width" />
 	</head>
 	<body>
 		<div id="bloc_page">
 			<header>
 				<div id="logo"><img src="images/logo/Reservia@3x.png" alt="logo Reservia" /></div>
 				<div id="menu">
-					<nav>
+					<nav id="nav">
 						<ul>
 							<li><a href="#hebergements">Hébergements</a></li>
 							<li><a href="#activites">Activités</a></li>
@@ -42,31 +42,35 @@
                 </div>
             </div>
 
-            <div id="filtres">
-	            	<div id="bloc1">
-	            		<p>Filtres</p>
-	            	</div>
-	                
-	                <div id="bloc2">
-	                	<div class="rond_icon"><i class="fas fa-money-bill-wave" style="color: #0065FC"></i></div>
-	                	<div class="textes"><p>Economique</p></div>
-	                </div>
+			<div id="conteneur_filtres">
+                <div id="bloc1">
+                            <p>Filtres</p>
+                        </div>
 
-	                <div id="bloc3">
-	                	<div class="rond_icon"><i class="fas fa-child" style="color: #0065FC"></i></div>
-	                	<div class="textes"><p>Familial</p></div>
-	                </div>
+                <div id="filtres">
+                        
+                        
+                        <div id="bloc2">
+                            <div class="rond_icon"><i class="fas fa-money-bill-wave" style="color: #0065FC"></i></div>
+                            <div class="textes"><p>Economique</p></div>
+                        </div>
 
-	                <div id="bloc4">
-	                	<div class="rond_icon"><i class="fas fa-heart" style="color: #0065FC"></i></div>
-	                	<div class="textes"><p>Romantique</p></div>
-	                </div>
+                        <div id="bloc3">
+                            <div class="rond_icon"><i class="fas fa-child" style="color: #0065FC"></i></div>
+                            <div class="textes"><p>Familial</p></div>
+                        </div>
 
-	                <div id="bloc5">
-	                	<div class="rond_icon"><i class="fas fa-dog" style="color: #0065FC"></i></div>
-	                	<div class="textes"><p>Animaux</p></div>
-	                </div>
-	        </div>
+                        <div id="bloc4">
+                            <div class="rond_icon"><i class="fas fa-heart" style="color: #0065FC"></i></div>
+                            <div class="textes"><p>Romantique</p></div>
+                        </div>
+
+                        <div id="bloc5">
+                            <div class="rond_icon"><i class="fas fa-dog" style="color: #0065FC"></i></div>
+                            <div class="textes"><p>Animaux</p></div>
+                        </div>
+                </div>
+            </div>
 
             <div id="info">
                 <div id="border_icon_info"><i class="fas fa-info" style="color: #0065FC"></i></div>
@@ -184,9 +188,9 @@
 					<div id="titre_bloc_gauche_bas"><h3>Afficher plus</h3></div>
 			</div>
 
-			<div id="bloc_droit">
+			<div id="aside">
 
-				<div id="titre_bloc_droit"><h2>Les plus populaires</h2></div>
+				<div id="titre_aside"><h2>Les plus populaires</h2> <p><i class="fas fa-chart-line"></i></p></div>
 
 					<div id="bloc_produits_populaires">
 						<a href="#">
@@ -211,7 +215,7 @@
 							</div>
 							<div class="texte_hebergement">
 								<h4>Au coeur de l'eau <br />Chambres d'hôtes</h4>
-								<p class="texte">Nuit à partir de <strong>25€</strong> </p>
+								<p class="texte">Nuit à partir de <strong>71€</strong> </p>
 								<p>	
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #0065FC" ></i>
@@ -227,7 +231,7 @@
 							</div>
 							<div class="texte_hebergement">
 								<h4>Hôtel Tout bleu et blanc</h4>
-								<p class="texte_populaire">Nuit à partir de <strong>25€</strong> </p>
+								<p class="texte_populaire">Nuit à partir de <strong>68€</strong> </p>
 								<p>	
 									<i class="fas fa-star " style="color: #0065FC" ></i>
 									<i class="fas fa-star " style="color: #0065FC" ></i>

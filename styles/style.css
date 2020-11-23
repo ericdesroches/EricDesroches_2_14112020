@@ -1,47 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*@media screen and (max-width: 1440px)
+/**/@media screen and (min-width: 1440px)
 {
-#bloc_page
+/*#bloc_page
 {
-	width: auto;
+	width: 1440px;
 	margin: 0 auto;
-}
 }*/
-
-/* ____________________________________________ @media 1280px _________________________________________*/
-@media screen and (max-width: 1280px)
-{
-
-/*p, h2
-{
-	color: red;
-}*/
-
-#bloc_page
+#conteneur_section3
 {
 	width: auto;
+	margin-top: 30px;
 	margin: auto;
+	margin: 0 50px 0 50px;
+}
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+   	flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+	/*width: auto;*/
+	height: 445px;
+    
+}
 }
 
-#header{
-	border: solid;
-	display: flex;
-	flex-direction: column;
-	width: auto;
-}
-#conteneur_section2
-{
-	width: auto;
-}
-#bloc_droit{
-	width: auto;
-}
-}
+
 /* ___________________________________________________________________________________________________*/
 
 /* ____________________________________________ @media 480px _________________________________________*/
-@media all and (max-width: 480px)
+@media all and (max-width: 600px)
 {
 	/* Vos règles CSS pour les mobiles ici */
 #bloc_page
@@ -51,10 +42,10 @@
 	
 }
 
-/*p, h1, h2, h3, h4
+/**/p, h1, h2, h3, h4
 {
 	color: rgb(0, 255, 64);
-}*/
+}
 
 header
 {
@@ -62,55 +53,91 @@ header
 	flex-direction: column;
 	width: auto;
 	height: auto;
-	
 }
-/* section1 */
+#logo{
+	display: flex;
+	order: 1;
+}
+#menu{
+	order: 3;
+}
+#nav{
+	width: 100%;
+}
+
+
+#inscription
+{
+	order: 2;
+}
+
+/* _____________________________________________________ section1 ______________________________________ */
 #search
 {
-	background-color: red;
-	width: auto;
-	
-
+	width: 375px;
 }
 
-#filtres 
-{
-	flex-direction: column;
-}
 
-/* section2 */
+
+/* _____________________________________________________ section2 */
 #conteneur_section2
 {
-	
-	flex-direction: column-reverse;
-	width: auto;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	width: 100%;
 }
+
 #bloc_gauche
 {
 	display: flex;
-	flex-direction: column;
+	/*flex: 1;*/
 	width: auto;
 	height: auto;
 	/*background-color: #F2F2F2;
 	border-radius: 20px;*/
 	padding: 20px;
+	margin-bottom: 50px;
 }
 
-#bloc_droit{
+.produit_hebergement{
 	width: auto;
 }
 
-/* section3 */
-#conteneur{
-	flex-direction: column;
+#aside
+{
+	width: auto;
 }
 
-/* _____________Footer 480px ________________*/
+/* ___________________________________________________________section3 */
+#conteneur_section3
+{
+	width: auto;
+	height: auto;
+	
+}
+#conteneur {
+	/**/width: auto;
+    height: auto;
+}
+#conteneur_texte
+{
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	padding: 30px 50px 50px 50px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* ____________________________________________________________Footer 480px */
 
 #conteneur_section4
 {
-	
-	/*flex-direction: column;*/
+	display: flex;
+	/*flex-wrap: wrap;
+	flex-direction: column;*/
 	margin: auto;
 	
 	width: auto;
@@ -121,8 +148,9 @@ header
 #conteneur_texte
 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: auto;
 	padding: 30px 50px 50px 50px;
 	font-family: 'Raleway', sans-serif;
@@ -165,7 +193,7 @@ body
 	max-width: 1440px;
 	margin: 0 auto;
 }
-/* ____________________________________________________Header bloc_logo______________________________________ */
+/* ____________________________________________________ Header ______________________________________ */
 header
 {
 	display: flex;
@@ -175,10 +203,11 @@ header
 	flex-wrap: wrap;
     margin: 0 50px 0 50px;
 }
-
+/* ____________________________________________________ logo ______________________________________ */
 #logo
 {
 	display: flex;
+	flex: 1;
 }
 
 #logo img
@@ -187,12 +216,11 @@ header
 	height: 60px;
 }
 
-/* ____________________________________________ Navigation__________________________________________ */
+/* ____________________________________________ Navigation __________________________________________ */
 
 #menu{
 	display: flex;
 	flex-direction: row;
-	/*list-style-type: none;*/
 	font-weight: bold;
 	
 }
@@ -229,12 +257,13 @@ nav a:hover
 
 
 #inscription {
-	font-weight: 700;
+	font-weight: 800;
 	
-	order: 2;
 	padding-top: 18px;
 	padding-right: 40px;
+	color: #0065FC;
 }
+
 #inscription a{
 	color: #0065FC;
 }
@@ -330,25 +359,35 @@ input
 }
 /* ___________________________________________________________________________________ */
 /* ________________________________________ Filtres _______________________________________ */
-#filtres 
+
+#conteneur_filtres{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#filtres
 {
     display: flex;
-    flex-direction: row;
+	flex-direction: row;
     justify-content: center;
     align-items: center;
-    justify-content: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
     width: auto;
-    height: 35px;
-    margin: 10px 0 10px 0;
+    height: auto;
+    /**/margin: 10px 0 10px 0;
     font-family: 'Raleway', sans-serif;
 	font-weight: bold;
+	
 }
 
 #bloc1
 {
 	width: auto;
-	height: 50px;
+	height: auto;
 	margin-right: 30px;
+	
 }
 
 #bloc2:hover, #bloc3:hover, #bloc4:hover, #bloc5:hover
@@ -360,7 +399,7 @@ input
 .textes
 {
 	width: auto;
-	height: 50px;
+	height: auto;
 	border-color: black;
 	display: flex;
 	flex-direction: row;
@@ -396,7 +435,7 @@ input
 	border: solid 3px;
 	border-color: #F2F2F2;
 	border-radius: 50px;
-	margin-right: 30px;
+	margin: 5px 5px 5px 0px;
 }
 
 
@@ -411,7 +450,7 @@ input
 	border: solid 3px;
 	border-color: #F2F2F2;
 	border-radius: 50px;
-	margin-right: 30px;
+	margin: 5px 5px 5px 0px;
 }
 #bloc4
 {
@@ -424,7 +463,7 @@ input
 	border: solid 3px;
 	border-color: #F2F2F2;
 	border-radius: 25px;
-	margin-right: 30px;
+	margin: 5px 5px 5px 0px;
 }
 
 #bloc5
@@ -438,16 +477,17 @@ input
 	border: solid 3px;
 	border-color: #F2F2F2;
 	border-radius: 26px;
-	margin-right: 30px;
+	margin: 5px 5px 5px 0px;
 }
 
 #info
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px 0 0 0;
+	display: flex;
+	/*flex-direction: row;
+    justify-content: flex-start;*/
+	align-items: center;
+	/*flex-wrap: wrap;*/
+    margin: 10px 0 10px 0;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -461,10 +501,9 @@ input
     height: 24px;
     border: solid 3px;
     border-color: #F2F2F2;
-    border-radius: 25px;
+    border-radius: 27px;
     margin-right: 12px;
 }
-
 
 
 /* ____________________ Section 2 bloc gauche _________________ */
@@ -484,19 +523,29 @@ a
 	flex-wrap: wrap;
 	width: auto;
 	height: auto;
-	margin: auto;
-	margin: 0 50px 0 50px;	
+	margin: 20px 50px 50px 50px;	
 }
 
 #bloc_gauche
 {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	width: 60%;
 	height: auto;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding: 40px;
+}
+
+#titre_bloc_gauche_haut
+{
+	display: flex;
+}
+
+#titre_bloc_gauche_bas
+{
+	display: flex;
 }
 
 #bloc_produits_hebergement
@@ -505,31 +554,20 @@ a
     flex-direction: row;
    	justify-content: space-between;
    	flex-wrap: wrap;
-    width:auto;
+    width: auto;
     height: auto;
 }
 
 .produit_hebergement
 {
-	width: auto;
+	width: 30%;
+	min-width: 247px;
 	height: 200px;
 	background-color: #FFF;
     box-shadow: 0px 0px 10px gray;
 	border-radius: 20px;
 	justify-content: space-around;
 	margin: 10px 0 10px 0;
-}
-
-#titre_bloc_gauche_haut
-{
-	display: flex;
-	
-}
-
-#titre_bloc_gauche_bas
-{
-	display: flex;
-	
 }
 
 .photo_produit_hebergement
@@ -545,6 +583,7 @@ a
 	height: 113px;
 	border-radius: 17px 17px 0px 0px;
 	margin: 5px 5px 5px 5px;
+	object-fit: cover;
 }
 
 .texte_hebergement h4
@@ -571,26 +610,37 @@ a
 
 
 
-/* ____________________ Section 2 bloc droit _________________ */
+/* ____________________ Section 2 aside _________________ */
 
 
-#bloc_droit
+#aside
 {
 	display: flex;
 	flex-direction: column;
-	width: 25%;
+	width: auto;
 	height: auto;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding: 40px;
 }
+#titre_aside{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.fa-chart-line{
+	font-size: 1.5em;
+}
 
 #bloc_produits_populaires
 {
 	display: flex;
-	flex-wrap: wrap;
+	
 	flex-direction: column;
 	width: auto;
+	
 }
 
 .produit_populaire
@@ -633,15 +683,15 @@ a
 }
 /* _______________________________________________ Section 3 _____________________________________________________ */
 
-#conteneur_section3
+/*#conteneur_section3
 {
 	width: auto;
 	margin-top: 30px;
 	margin: auto;
 	margin: 0 50px 0 50px;
-}
+}*/
 
-#conteneur
+/*#conteneur
 {
     display: flex;
     flex-direction: column;
@@ -649,10 +699,10 @@ a
     align-items: center;
     align-content: space-between;
     justify-content: space-between;
-    width: auto;
-    height: 445px;
-    margin: auto;
-}
+	width: auto;
+	height: 445px;*/
+    /*margin: auto;
+}*/
 
 .element
 {
@@ -680,11 +730,14 @@ a
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 300px;
-    height: 445px;
+	/**/width: 300px;
+	
+	/**/height: 445px;
+	
     background-color: #FFF;
     box-shadow: 0px 0px 10px gray;
-    border-radius: 20px;
+	border-radius: 20px;
+	
     }
 
 .photo_produit_activité1 img
@@ -692,7 +745,8 @@ a
 	width: 300px;
     height: 390px;
     border-radius: 20px 20px 0px 0px;
-    margin: 0px 0px 5px 0px;
+	margin: 0px 0px 5px 0px;
+	object-fit: cover;
 }
 
 .element_2:nth-child(2)
@@ -717,7 +771,8 @@ a
     width: 300px;
     height: 180px;
     border-radius: 20px 20px 0px 0px;
-    margin: 0px 0px 5px 0px;
+	margin: 0px 0px 5px 0px;
+	object-fit: cover;
 }
 
 
@@ -743,7 +798,8 @@ a
     width: 300px;
     height: 145px;
     border-radius: 20px 20px 0px 0px;
-    margin: 0px 0px 5px 0px;
+	margin: 0px 0px 5px 0px;
+	object-fit: cover;
 }
 
 .element_4:nth-child(4)

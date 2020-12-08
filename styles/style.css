@@ -3,13 +3,13 @@
 body
 {
 	font-family: 'Raleway', sans-serif;
-	margin: 0;
+	/*margin: 0;*/
 }
 
 #bloc_page
 {
 	max-width: 1440px;
-	margin: 0 auto;
+	margin: auto;
 }
 /* ____________________________________________________ Header ______________________________________ */
 header
@@ -18,7 +18,7 @@ header
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
-    margin: 0 50px 0 50px;
+    margin: 0 50px 20px 50px;
 }
 /* ____________________________________________________ logo ______________________________________ */
 #logo
@@ -70,7 +70,6 @@ li a:hover
 
 /* ____________________________________________ inscription __________________________________________ */
 
-
 #inscription {
 	font-weight: 800;
 	padding-top: 18px;
@@ -84,46 +83,36 @@ li a:hover
 
 /* _________________________________ Section 1 _________________________________ */
 
-
-
 #conteneur_section1
 {
     display: flex;
     flex-direction: column;
    	width: auto;
 	height: auto;
-	/**/margin: 30px 50px 0 50px;
+	margin: 0px 50px;
 }
 
 #baseline1
 {
-    
-    font-size: 0.9em;  
-	line-height: 2em;
-	width: auto;
+	font-size: 0.9em;
 }
 
 #baseline2
 {
-    
 	line-height: 1em;
-	width: auto;
-   /* margin: 0px;*/
 }
 
-
-/* _________________________________________Barre de recherche___________________________________________*/
+/* ____Barre de recherche____*/
 
 #search
 {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	/*flex-wrap: wrap;*/
     border: solid 2px; border-color: #F2F2F2; border-radius: 10px;
 	width: 420px;
 	height: 50px;
-	margin: 10px 0 30px 0;
+	margin: 10px 0 50px 0;
 }
 
 #fd_gris
@@ -155,46 +144,61 @@ input
 	display: flex;
 	justify-content: center;
     align-items: center;
-    width: 135px;
+    width: 125px;
     height: 50px;
 	background-color: #0065FC;
 	font-weight: bold;
     color: white;
     border-radius: 0px 10px 10px 0px;
 }
-/* ________________________________________________________________________________________ */
 
-/* ________________________________________ Filtres _______________________________________ */
-/**/
+/* ______ Filtres ______ */
+
 #conteneur_filtres
 {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
+	font-weight: 700;
 }
 
-#filtres
+#filtres 
 {
     display: flex;
-	flex-direction: row;
-    justify-content: center;
-    align-items: center;
-	justify-content: flex-start;
 	flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    margin: 10px 0 10px 0;
+	align-items: center;
 }
-/**/
 
 #bloc1
 {
-	width: auto;
-	height: auto;
 	margin-right: 30px;
+}
+
+.textes
+{
+	padding: 0 10px;
+}
+
+.rond_icon
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+}
+
+#bloc2, #bloc3, #bloc4, #bloc5
+{
+	display: flex;
+    align-items: center;
+	height: 44px;
+	border: solid 3px;
+	border-color: #F2F2F2;
+	border-radius: 50px;
+	/**/margin: 10px 20px 5px 0 ;
 }
 
 #bloc2:hover, #bloc3:hover, #bloc4:hover, #bloc5:hover
@@ -202,48 +206,7 @@ input
 	color: #0065FC;
    	background-color: #F2F2F2;
 }
-
-.textes
-{
-	width: auto;
-	height: auto;
-	border-color: black;
-	display: flex;
-	flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-
-}
-
-.rond_icon
-{
-	display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-	width: 50px;
-	height: 50px;
-	background-color: #DEEBFF;
-	border-radius: 50%;
-	margin-right: 10px;
-}
-
-#bloc2, #bloc3, #bloc4, #bloc5
-{
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	width: auto;
-	height: 44px;
-	border: solid 3px;
-	border-color: #F2F2F2;
-	border-radius: 50px;
-	margin: 5px 5px 5px 0px;
-}
-
+/* _____ info _____ */
 #info
 {
 	display: flex;
@@ -266,8 +229,7 @@ input
     margin-right: 12px;
 }
 
-
-/* ____________________ Section 2 _________________ */
+/* ______________________________________________ Section 2 _____________________________________________ */
 
 a
 {
@@ -295,14 +257,13 @@ a
 	/**/margin: 20px 50px 50px 50px;	
 }
 
-/* ____________________ Section 2 bloc gauche _________________ */
+/* _________ Section 2 bloc gauche __________ */
 #bloc_gauche
 {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 60%;
-	
 	height: auto;
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -315,59 +276,43 @@ a
     flex-direction: row;
    	justify-content: space-between;
    	flex-wrap: wrap;
-    width: auto;
-    height: auto;
+    /*width: auto;
+    height: auto;*/
 }
 
 .produit_hebergement
 {
-	width: 247px;
-	height: 200px;
-	background-color: #FFF;
-    box-shadow: 0px 0px 10px gray;
-	border-radius: 20px;
-	justify-content: space-around;
-	margin: 10px 0 10px 0;
-}
-
-.photo_produit_hebergement
-{
 	display: flex;
 	flex-direction: column;
-	width: auto;
+	/**/width: 247px;
+	height: 200px;
+	/**/background-color: #FFF;
+    box-shadow: 0px 0px 10px gray;
+	border-radius: 20px;
+	margin: 10px 0;
 }
 
 .photo_produit_hebergement img
 {
-	width: auto;
+	width: 237px;
 	height: 113px;
 	border-radius: 17px 17px 0px 0px;
-	margin: 5px 5px 5px 5px;
+	margin: 5px 5px 0px 5px;
 	object-fit: cover;
 }
 
 .texte_hebergement h4
 {
-	margin: 5px 5px 5px 5px ;
-    /*color: #0065FC;*/
-    text-align: left;
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+	margin: 0px 5px 5px 5px ;
 }
 
 .texte_hebergement p
 {
-	width: 235px;
-	font-weight: normal;
-	font-size: smaller; 
-	line-height: 1.5em;
-	margin: 0px 5px 0px 5px;
-	overflow: auto; 
-	text-align: left;
-	font-family: 'Raleway', sans-serif;
+	font-size: 0.8em; 
+	line-height: 1.5em;/**/
+	margin: 0px 5px 5px 5px;
+	 
 }
-
 
 /* ____________________ Section 2 aside _________________ */
 
@@ -404,14 +349,12 @@ a
 .produit_populaire
 {
 	display: flex;
-	justify-content: space-between;
-	align-content: center;
 	width: 345px;
 	height: 145px;
 	background-color: #FFF;
     box-shadow: 0px 0px 10px gray;
 	border-radius: 20px;
-	margin: 10px 0 10px 0;
+	margin: 10px 0;
 }
 
 .photo_produit_populaire img
@@ -420,25 +363,25 @@ a
 	height: 135px;
 	border-radius: 17px 0px 0px 17px;
 	margin: 5px 5px 5px 5px;
+	object-fit: cover;
 }
-
+.texte_populaire p
+{
+	overflow: auto; 
+}
 .texte_populaire h4
 {
 	margin: 5px 5px 5px 5px ;
-    /*color: #0065FC;*/
-    text-align: left;
 }
 
 .texte_populaire p
 {
-	width: auto;
-	font-weight: normal;
-	font-size: smaller; 
-	line-height: 1.5em;
+	font-size: 0.8em; 
+	line-height: 1.5em;/**/
 	margin: 0px 5px 0px 5px;
-	overflow: auto; 
-	text-align: left;
+	/**/overflow: auto; 
 }
+
 /* _______________________________________________ Section 3 _____________________________________________________ */
 
 #conteneur_section3
@@ -523,7 +466,6 @@ a
 	object-fit: cover;
 }
 
-
 .element_3:nth-child(3)
 {
 	order: 4;
@@ -565,17 +507,7 @@ a
     order: 6;
 }
 
-
-
 /* ____________________________________________Footer _________________________________________*/
-
-/*footer
-{
-	display: flex;
-	
-	background-color: #F2F2F2;
-	margin-top: 50px;
-}*/
 
 #conteneur_section4
 {
@@ -583,7 +515,7 @@ a
 	flex-wrap: wrap;
 	margin: auto;
 	background-color: #F2F2F2;
-	min-width: 480px;
+	/*min-width: 480px;*/
 	height: auto;
 	margin-top: 50px;
 }
@@ -609,39 +541,43 @@ a
 	line-height: 0;
 }
 
-/* ____________________________________________ @media 1280px _________________________________________*/
+/* ____________________________________________ @media 1024px _________________________________________*/
 
-@media all and (min-width: 769px) and (max-width: 1280px) {
+@media all and (min-width: 769px) and (max-width: 1439px) {
 
 /* section 2 */
+	#conteneur_section2 /* corrections alignement 2020 12 02 */
+	{
+		flex-direction: column-reverse;
+	}
 	#bloc_gauche
 	{
-	flex-direction: row;
-	width: 100%;
+		flex-direction: row;
+		width: auto;
 	}
 
 	#bloc_produits_hebergement
 	{
-	flex-direction: row;
-	justify-content: first baseline;
-   	flex-wrap: wrap;
-    width: auto;
-    height: auto;
-}
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: auto;
+		height: auto;
+	}
 
-	#bloc_produits_populaires
-{
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	flex-direction: row;
-	width: auto;
-}
+		#bloc_produits_populaires
+	{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex-direction: row;
+		width: auto;
+	}
 /* section 3 */
 	#conteneur_elements{
 		height: auto;
 		width: auto;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		flex-direction: row;
 	}
 	.produit_activité1, .produit_activité2, .produit_activité3
@@ -661,11 +597,54 @@ a
 /* ____________________________________________ @media 768px (iPad) _________________________________________*/
 
 @media all and (max-width: 768px){
+	
+/**/#conteneur_section2 /* corrections alignement 2020 12 02 */
+	{
+		justify-content: center;
+		margin: 0;
+	}
+
+	#bloc_gauche
+	{
+	width: 345px;
+	margin-bottom: 30px;
+	
+	}
+
+	#bloc_produits_hebergement /* corrections alignement 2020 12 02 */
+	{
+	   /**/justify-content: center;
+	}
+
+	.produit_hebergement
+	{
+		width: 345px;
+		height: auto;	
+	}
+
+	.photo_produit_hebergement img
+	{
+		width: 335px;
+	}
+
 	/* section 3 */
+	#conteneur_section3
+	{
+		justify-content: center;
+		/*margin: 0;*/
+	}
+
+	.titre_bloc
+	{
+		display: flex;
+		justify-content: center;
+	}
+
 	#conteneur_elements{
 		height: auto;
 		width: auto;
 		flex-direction: row;
+		justify-content: center;
 	}
 
 	.produit_activité1, .produit_activité2, .produit_activité3
@@ -687,9 +666,15 @@ a
 
 @media all and (max-width: 375px)
 {
+	#bloc_page{
+		/*margin: 0;*/
+		/**/padding: 10px;
+		/**/justify-content: center;
+	}
 	header
 	{
-		width: 100%;
+		/**/width: 100%;
+		margin: 0;
 	}
 	#logo
 	{
@@ -704,6 +689,7 @@ a
 	nav ul
 	{
 		padding: 0;
+		margin: 0;
 	}
 
 	li a
@@ -727,58 +713,80 @@ a
 	#inscription
 	{
 		order: 2;
+		padding-right: 0;
 	}
 
 	/* _____________________________________________________ section1 ______________________________________ */
-	
+	#conteneur_section1
+{
+	/**/margin: 0;
+}
 	#search
 	{
 		width: auto;
+		margin: 0 0 20px;
 	}
 
 	input[type=search]{
-        width: auto;
+        width: 150px;
     }
 
 	/* ____________________________ section2 ______________________________________ */
 	
-	#conteneur_section2
-	{
-		flex-direction: column-reverse;	
-		/*max-width: 375px;*/	
+	#conteneur_section2{
+		flex-direction: column-reverse;
 	}
-
+	
 	#bloc_gauche
+{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+	#bloc_produits_hebergement
 	{
-		background-color: #ffffff;
-		width: 375px;
+		/*justify-content: center;
+		margin: 0;
+		padding: 0;*/
 	}
 
 	.produit_hebergement
 	{
 		width: 335px;
+		margin: 0;
+		margin: 10px 0;
+		justify-content: center;
 	}
-
+	.photo_produit_hebergement img
+	{
+		width: 325px;
+	}
 	#aside
 	{
-		width: 335px;
+		width: auto;
 		background-color: #F2F2F2;
-		padding: 10px;
+		/**/padding:10px;
+		border-radius: 0%;
 	}
 
 	#bloc_produits_populaires
 	{
 		display: flex;
 		flex-direction: column;
-		width: 335px;
+		width: auto;
 	}
-		.produit_populaire
+
+	.produit_populaire
 	{
 		width: 335px;
 	}
 
 	/* __________________ section3 ____________________ */
-
+	#conteneur_section3{
+		margin: 0;
+	}
 	#conteneur_elements
 	{
 		height: auto;
@@ -798,30 +806,30 @@ a
 		height: 135px;
 	}
 
-	/* ___________________________________________________________ section4 Footer _____________________ */
+	/* _______________________ section4 Footer _____________________ */
 
-	/*footer{
-		border: solid;
+	/**/footer{
 		flex-direction: column;
 		flex-wrap: wrap;
-		width: auto;
+		width: 100%;
 	}
 	
-	#conteneur_section4
-	{
-		border: solid;
-		flex-wrap: wrap;
-	}*/	
-	
-	/*#conteneur_texte
+	/**/#conteneur_section4
 	{
 		margin: 0;
-	}*/
+		padding: 0;
+	}	
+	
+	#conteneur_texte
+	{
+		margin: 0;
+		padding: 10px;
+		width: auto;
+	}
+	#a_propos, #nos_hebergements, #assistance
+	{
+		width: 100%;
+	}
 }
-	
-
-	
-	/* ____________________________________________________________ Footer 375px ____________________________ */
-	
 
 /* ___________________________________________________ fin @media 375px _____________________________________ */

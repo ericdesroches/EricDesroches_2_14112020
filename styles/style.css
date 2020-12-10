@@ -597,8 +597,21 @@ a
 /* ____________________________________________ @media 768px (iPad) _________________________________________*/
 
 @media all and (max-width: 768px){
+
+	/* section 1 */
 	
-/**/#conteneur_section2 /* corrections alignement 2020 12 02 */
+	#search
+	{
+		width: 300px;
+	}
+	
+	#result
+	{
+		width: 200px;
+	}
+	
+	/* section 2 */
+	#conteneur_section2 /* corrections alignement 2020 12 02 */
 	{
 		justify-content: center;
 		margin: 0;
@@ -629,14 +642,12 @@ a
 {	
 	width: 345px;
 	height: auto;
-	
 }
 
 	/* section 3 */
 	#conteneur_section3
 	{
 		justify-content: center;
-		/*margin: 0;*/
 	}
 
 	.titre_bloc
@@ -663,6 +674,13 @@ a
 	{
 		width: 335px;
 		height: 135px;
+	}
+
+	/* section 4 */
+	#conteneur_texte
+	{
+		width: auto;
+		padding: 0;
 	}
 }
 
@@ -722,7 +740,7 @@ a
 	/* _____________________________________________________ section1 ______________________________________ */
 	#conteneur_section1
 {
-	/**/margin: 0;
+	margin: 0;
 }
 	#search
 	{
@@ -730,8 +748,8 @@ a
 		margin: 0 0 20px;
 	}
 
-	input[type=search]{
-        width: 150px;
+	#result{
+        width: 200px;
     }
 
 	/* ____________________________ section2 ______________________________________ */
@@ -741,12 +759,12 @@ a
 	}
 	
 	#bloc_gauche
-{
+	{
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	background-color: #ffffff;
-}
+	}
 
 	#bloc_produits_hebergement
 	{
@@ -768,7 +786,7 @@ a
 	{
 		width: auto;
 		background-color: #F2F2F2;
-		/**/padding:10px;
+		padding: 10px;
 		border-radius: 0%;
 	}
 
@@ -807,7 +825,7 @@ a
 		height: 135px;
 	}
 
-	/* _______________________ section4 Footer _____________________ */
+	/* _______________________ section 4 Footer _____________________ */
 
 	/**/footer{
 		flex-direction: column;

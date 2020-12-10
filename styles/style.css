@@ -10,6 +10,7 @@ body
 {
 	max-width: 1440px;
 	margin: auto;
+	/*display: flex;*/
 }
 /* ____________________________________________________ Header ______________________________________ */
 header
@@ -110,7 +111,7 @@ li a:hover
 	justify-content: flex-start;
 	align-items: center;
     border: solid 2px; border-color: #F2F2F2; border-radius: 10px;
-	width: 420px;
+	width: 410px;
 	height: 50px;
 	margin: 10px 0 50px 0;
 }
@@ -541,14 +542,13 @@ a
 	line-height: 0;
 }
 
-/* ____________________________________________ @media 1024px _________________________________________*/
+/* ____________________________________________ @media 1439px _________________________________________*/
 
-@media all and (min-width: 769px) and (max-width: 1439px) {
+@media all and (max-width: 1439px){
 
 /* section 2 */
-	#conteneur_section2 /* corrections alignement 2020 12 02 */
-	{
-		flex-direction: column-reverse;
+	#conteneur_section2{
+		justify-content: center;
 	}
 	#bloc_gauche
 	{
@@ -607,8 +607,7 @@ a
 	#bloc_gauche
 	{
 	width: 345px;
-	margin-bottom: 30px;
-	
+	margin-bottom: 30px;	
 	}
 
 	#bloc_produits_hebergement /* corrections alignement 2020 12 02 */
@@ -626,6 +625,12 @@ a
 	{
 		width: 335px;
 	}
+	#aside
+{	
+	width: 345px;
+	height: auto;
+	
+}
 
 	/* section 3 */
 	#conteneur_section3
@@ -667,9 +672,8 @@ a
 @media all and (max-width: 375px)
 {
 	#bloc_page{
-		/*margin: 0;*/
-		/**/padding: 10px;
-		/**/justify-content: center;
+		/*justify-content: center;*/
+		margin: 10px;
 	}
 	header
 	{
@@ -697,7 +701,6 @@ a
 		width: auto;
 		font-size: 1em;
 		padding-top: 20px;
-		/*text-decoration: none;*/
 		border-bottom: solid 2px #f2f2f2;
 		padding: 0 30px 18px 30px;
 	}
@@ -747,9 +750,7 @@ a
 
 	#bloc_produits_hebergement
 	{
-		/*justify-content: center;
-		margin: 0;
-		padding: 0;*/
+		padding: 0;
 	}
 
 	.produit_hebergement
@@ -785,7 +786,7 @@ a
 
 	/* __________________ section3 ____________________ */
 	#conteneur_section3{
-		margin: 0;
+		margin: 50px;
 	}
 	#conteneur_elements
 	{
@@ -833,3 +834,18 @@ a
 }
 
 /* ___________________________________________________ fin @media 375px _____________________________________ */
+
+/* ___________________________________________________ @media 320-374px _____________________________________ */
+
+@media all and (min-width: 320px) and (max-width: 374px){
+	#conteneur_section3
+	{
+		width: 335px;
+		margin: 0;
+	}
+
+	#conteneur_section4
+	{
+		width: 374px;
+	}	
+}

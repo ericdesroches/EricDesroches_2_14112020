@@ -602,7 +602,7 @@ a
 	
 	#search
 	{
-		width: 300px;
+		width: 400px;
 	}
 	
 	#result
@@ -695,7 +695,7 @@ a
 	}
 	header
 	{
-		/**/width: 100%;
+		width: 100%;
 		margin: 0;
 	}
 	#logo
@@ -717,10 +717,11 @@ a
 	li a
 	{
 		width: auto;
+
 		font-size: 1em;
 		padding-top: 20px;
 		border-bottom: solid 2px #f2f2f2;
-		padding: 0 30px 18px 30px;
+		padding: 18px 30px 18px 30px;
 	}
 
 	li a:hover
@@ -749,8 +750,8 @@ a
 	}
 
 	#result{
-        width: 200px;
-    }
+		width: 160px;
+	}
 
 	/* ____________________________ section2 ______________________________________ */
 	
@@ -856,6 +857,29 @@ a
 /* ___________________________________________________ @media 320-374px _____________________________________ */
 
 @media all and (min-width: 320px) and (max-width: 374px){
+
+	header
+	{
+		width: 374px;
+	}
+	#inscription{
+		padding-right: 20px;
+	}
+
+	#search{
+		width: auto;
+	}
+
+	/**/#result{
+		width: 175px;
+	}
+	
+	#fd_gris
+{
+    width: 50px;
+    height: 50px;
+}
+
 	#conteneur_section3
 	{
 		width: 335px;
